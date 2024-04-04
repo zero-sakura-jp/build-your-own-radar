@@ -39,7 +39,7 @@ jobs:
           API_KEY: ${{ secrets.GOOGLE_API_KEY }}
           GTM_ID: ${{ secrets.GTM_ID }}
       - run: npm ci
-      - run: npm run build:prod
+      - run: export API_KEY=${{ secrets.GOOGLE_API_KEY}} GTM_ID=${{ secrets.GTM_ID}} && npm run build:prod
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
