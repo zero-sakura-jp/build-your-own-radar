@@ -13,7 +13,7 @@ if (process.env.GTM_ID) {
     gtag('js', new Date())
 
     gtag('config', i)
-  })(window, document, 'script', 'dataLayer', process.env.GTM_ID)
+  })(window, document, 'script', process.env.GTM_ID)
 }
 if (process.env.ADOBE_LAUNCH_SCRIPT_URL) {
   ;(function (w, d, s, i) {
