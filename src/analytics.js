@@ -1,19 +1,18 @@
 if (process.env.GTM_ID) {
-  ;(function (w, d, s, l, i) {
-    w[l] = w[l] || []
-    w[l].push({ js: new Date() })
+  ;(function (w, d, s, i) {
     var f = d.getElementsByTagName(s)[0]
     var j = d.createElement(s)
     j.async = true
     j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i
     f.parentNode.insertBefore(j, f)
 
-    // Define the gtag function
-    w.gtag = function () {
-      w[l].push(arguments)
+    w.dataLayer = w.dataLayer || []
+    function gtag() {
+      w.dataLayer.push(arguments)
     }
-    // Configure the GTM ID
-    w.gtag('config', i)
+    gtag('js', new Date())
+
+    gtag('config', i)
   })(window, document, 'script', 'dataLayer', process.env.GTM_ID)
 }
 if (process.env.ADOBE_LAUNCH_SCRIPT_URL) {
