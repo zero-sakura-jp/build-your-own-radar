@@ -1,3 +1,37 @@
+# Setchy's Build Your Own Technology Radar
+
+> [!NOTE]
+> This is hosted at https://radar.setchy.io for anyone to use
+
+## Overview
+
+An enhanced version of Thoughtworks [BYOR][byor], which incorporates a number of usability and functionality improvements by @setchy that close the gap between the [byor hosted offering](tw-byor) and the [official thoughtworks radar](tw-radar)
+
+## Enhancements
+
+These enhancements including:
+
+- deep linking to quadrants
+- deep linking to blips
+- alphabetic ordering of blips
+- consistent draw order of blips based on blip number
+- blip movement detail (moved in, moved out, unchanged)
+
+Each of these have a [corresponding PR open][prs] for contribution to the upstream project
+
+## Deployment
+
+This branch is deployed via GitHub Pages
+
+[byor]: https://github.com/thoughtworks/build-your-own-radar
+[prs]: https://github.com/thoughtworks/build-your-own-radar/pulls/setchy
+[tw-byor]: https://radar.thoughtworks.com
+[tw-radar]: https://thoughtworks.com/radar
+
+---
+
+# Build Your Own Technology RAdar
+
 [![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/thoughtworks/build-your-own-radar?sort=semver)](https://github.com/thoughtworks/build-your-own-radar/releases/latest)
 [![Thoughtworks](https://circleci.com/gh/thoughtworks/build-your-own-radar.svg?style=shield)](https://circleci.com/gh/thoughtworks/build-your-own-radar)
 [![Stars](https://badgen.net/github/stars/thoughtworks/build-your-own-radar)](https://github.com/thoughtworks/build-your-own-radar)
