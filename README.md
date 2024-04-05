@@ -1,21 +1,24 @@
 # Setchy's Build Your Own Technology Radar
 
 > [!NOTE]
-> This is hosted at https://radar.setchy.io for anyone to use
+> This enhanced version is hosted at https://radar.setchy.io for anyone to use
 
 ## Overview
 
-An enhanced version of Thoughtworks [BYOR][byor], which incorporates a number of usability and functionality improvements by @setchy that close the gap between the [byor hosted offering](tw-byor) and the [official thoughtworks radar](tw-radar)
+An enhanced version of Thoughtworks [BYOR][byor], which incorporates a number of usability and functionality improvements by @setchy.
+
+These enhancements are mostly back-ported features that exists in the [official thoughtworks radar](tw-radar), but currently are not available within the [byor version](tw-byor)
 
 ## Enhancements
 
 These enhancements including:
 
-- deep linking to quadrants
-- deep linking to blips
-- alphabetic ordering of blips
-- consistent draw order of blips based on blip number
-- blip movement detail (moved in, moved out, unchanged)
+- [deep linking to quadrants][pr-linking]
+- [deep linking to blips][pr-linking]
+- [alphabetic ordering of blips][pr-alpha-order]
+- [consistent draw order of blips based on blip number][pr-draw-ascending]
+- [blip movement detail (moved in, moved out, unchanged)][pr-movement]
+- [fix for google tag manager analytics plugin][pr-gtm]
 
 Each of these have a [corresponding PR open][prs] for contribution to the upstream project
 
@@ -27,6 +30,11 @@ This branch is deployed via GitHub Pages
 [prs]: https://github.com/thoughtworks/build-your-own-radar/pulls/setchy
 [tw-byor]: https://radar.thoughtworks.com
 [tw-radar]: https://thoughtworks.com/radar
+[pr-gtm]: https://github.com/thoughtworks/build-your-own-radar/pull/368
+[pr-linking]: https://github.com/thoughtworks/build-your-own-radar/pull/337
+[pr-alpha-order]: https://github.com/thoughtworks/build-your-own-radar/pull/330
+[pr-draw-ascending]: https://github.com/thoughtworks/build-your-own-radar/pull/322
+[pr-movement]: https://github.com/thoughtworks/build-your-own-radar/pull/310
 
 ---
 
