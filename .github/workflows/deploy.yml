@@ -31,15 +31,20 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Build Radar
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version-file: .nvmrc
+      - name: Install dependencies
+        run: npm ci
+      - name: Build Site
         env:
           API_KEY: ${{ secrets.GOOGLE_API_KEY }}
           GTM_ID: ${{ secrets.GTM_ID }}
-      - run: npm ci
-      - run: export API_KEY=${{ secrets.GOOGLE_API_KEY}} GTM_ID=${{ secrets.GTM_ID}} && npm run build:prod
+        run: |
+          export API_KEY=$API_KEY
+          export GTM_ID=$GTM_ID
+          npm run build:prod
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
